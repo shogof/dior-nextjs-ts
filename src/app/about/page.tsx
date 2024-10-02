@@ -19,7 +19,7 @@ const About = () => {
         <div className="mt-8 p-4 bg-white rounded-lg shadow-lg text-center">
           <h2 className="text-2xl font-semibold text-pink-600">Our Vision</h2>
           <p className="text-gray-600 mt-2 text-justify">
-            To inspire individuals through the art of fashion.
+            To inspire and empower individuals through the art of fashion.
           </p>
         </div>
       </div>
