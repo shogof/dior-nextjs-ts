@@ -11,7 +11,7 @@ const About = () => {
           clothing, and accessories, Dior embodies elegance and sophistication.
         </p>
         <p className="text-lg text-gray-700 mb-6 text-justify max-w-2xl">
-          The brand's revolutionary &quot;New Look&quot; silhouette in 1947
+          The brands revolutionary &quot;New Look&quot; silhouette in 1947
           transformed women&apos;s fashion and redefined femininity. Today, Dior
           continues to be a leader in luxury fashion, blending tradition with
           modernity.
