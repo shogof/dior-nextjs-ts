@@ -2,6 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 
 interface NavbarProps {
   isHomePage: boolean;
@@ -14,10 +15,12 @@ const Navbar = ({ isHomePage }: NavbarProps) => {
     <nav className="fixed top-0 left-0 right-0 flex justify-between items-center p-4 bg-transparent z-10 w-11/12 mx-auto">
       <div className="flex items-center">
         <Link href="/">
-          <img
+          <Image
             src="/images/logoo-removebg-preview (1).png"
             alt="Dior Logo"
             className="h-20 mr-2 w-24"
+            width={96}
+            height={80}
           />
         </Link>
       </div>

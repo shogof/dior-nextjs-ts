@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -27,10 +28,12 @@ const Home = () => {
           className={`absolute top-0 left-0 w-full h-screen transition-opacity duration-500
             ${currentSlide === index ? "opacity-100" : "opacity-0"}`}
         >
-          <img
+          <Image
             src={image.src}
             alt={image.alt}
-            className="w-full h-full object-cover"
+            layout="fill"
+            objectFit="cover"
+            className="w-full h-full"
           />
         </div>
       ))}
@@ -38,7 +41,7 @@ const Home = () => {
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white bg-pink-900 bg-opacity-30 top-0">
         <h1 className="text-5xl font-bold mb-4">Welcome to Dior</h1>
         <p className="mt-4 text-lg">
-          Explore the elegance and luxury of Dior's latest collections.
+          Explore the elegance and luxury of Dior&apos;s latest collections.
         </p>
         <div className="mt-6">
           <Link
