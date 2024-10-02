@@ -4,11 +4,7 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 
-interface NavbarProps {
-  isHomePage: boolean;
-}
-
-const Navbar = ({ isHomePage }: NavbarProps) => {
+const Navbar = () => {
   const pathname = usePathname();
 
   return (

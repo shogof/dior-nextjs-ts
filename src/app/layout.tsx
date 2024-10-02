@@ -11,12 +11,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   const pathname = usePathname();
-  const isHomePage = pathname === "/";
 
   return (
     <html lang="en">
       <body>
-        <Navbar isHomePage={isHomePage} />
+        <Navbar />
         {children}
         <Footer />
       </body>
